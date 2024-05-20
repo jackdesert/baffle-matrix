@@ -3,20 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <title>Audio Files</title>
+    <style>
+        .container {
+            display: flex;
+        }
+        .column {
+            flex: 1;
+            margin: 10px;
+        }
+        .column h2 {
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
     <h1>Audio Files</h1>
-    <ul>
-        {% for file in files %}
-        <li>
-            <p>A: {{ file.A }}, C: {{ file.C }}</p>
-            <audio controls>
-                <source src="{{ file.file }}" type="audio/mpeg">
-                Your browser does not support the audio element.
-            </audio>
-        </li>
-        {% endfor %}
-    </ul>
+    <div class="container">
+        <div class="column">
+            <h2>C0</h2>
+            <ul>
+                {% for file in file_info.C0 %}
+                <li>
+                    <p>A: {{ file.A }}</p>
+                    <audio controls>
+                        <source src="{{ file.file }}" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div class="column">
+            <h2>C5</h2>
+            <ul>
+                {% for file in file_info.C5 %}
+                <li>
+                    <p>A: {{ file.A }}</p>
+                    <audio controls>
+                        <source src="{{ file.file }}" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
 </body>
 </html>
+
 
