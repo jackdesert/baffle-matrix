@@ -77,12 +77,12 @@ BACKLOG
 
 
 
-Writeup
--------
+Parametric Study of Rollover Baffle Geometry
+--------------------------------------------
 
 I'm learning to design, build, and repair mouthpieces. Especially of interest to me is how to construct a baffle to give a particular timbre.
 
-Today I added several different wax rollover baffles to an unbranded, otherwise-dark-sounding baritone mouthpiece. With each new was rollover baffle, the dimensions of the baffle were written down and a recording of the D minor scale was made.
+Today I added several different wax rollover baffles to an unbranded, otherwise-dark-sounding baritone mouthpiece. With each new wax rollover baffle, the dimensions of the baffle were written down and a recording of the D minor scale was made.
 
 Here is a sketch showing the dimensions referenced:
 
