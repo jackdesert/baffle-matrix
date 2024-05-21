@@ -15,7 +15,7 @@ for file in files:
     parts = file.split('/')
     A_value = parts[1].split('__')[0][1:]
     C_value = parts[0][1:]
-    file_info[f'C{C_value}'].append({'A': A_value, 'file': file})
+    file_info[f'C{C_value}'].append({'A': A_value, 'C': C_value, 'file': file})
 
 # Setup Jinja2 environment
 env = Environment(loader=FileSystemLoader(searchpath='.'))

@@ -82,11 +82,43 @@ Parametric Study of Rollover Baffle Geometry
 
 I'm learning to design, build, and repair mouthpieces. Especially of interest to me is how to construct a baffle to give a particular timbre.
 
-Today I added several different wax rollover baffles to an unbranded, otherwise-dark-sounding baritone mouthpiece. With each new wax rollover baffle, the dimensions of the baffle were written down and a recording of the D minor scale was made.
+Today I constructed several rollover baffles atop an otherwise-dark-sounding baritone mouthpiece. With each new wax rollover baffle, the dimensions of the baffle were written down and a recording of the D minor scale was made.
+
 
 Here is a sketch showing the dimensions referenced:
 
+<<INSERT PHOTO>>
+
+Here is a photo of one of the wax baffles. (C=0mm, A=2.3mm)
+
+<<INSERT PHOTO>>
+
+And here is a link to the audio recordings.
+
+
+For simplicity these rollover baffles actually have sharp edges. The baffle angle was established by
+scraping the wax with a flat object with one end of the flat object resting atop the tip rail and the other end of the flat object resting either at the base of the window (C==0) or 5mm below the base of the window (C==5). This gives a clean, repeatable angle.
+
+Establishing the baffle length (A) was more akin to "shave and check". The same flat object was used to establish the back side of the baffle, and after a few scrapes the baffle length (A) was measured. Once the length was deemed appropriate for the next reading, a recording was made.
+
+
+
+
+
+
+
+
+Say you have two mouthpieces that are identical except for the values of C and A. One has C=0mm, the other has C=5mm. What values can you choose for A for each mouthpiece such that the resultant timbre of each  mouthpiece is approximately the same?
+
+
+The real intent of this exercise is to discover which combinations of C=0, A=?
 The real intent of the exercise is to find commonalities between timbres of different geometries. That is,
+to identify disparate geometries that share the same timbre.
+
+To put it simply, can you find a sound from the left column that has the same amount of edge or brightness as a sound from the right column?
+
+
+
 The real intent of the exercise is to identify the dimensions of a baffle that have the most impact on the timbre. And then to find out if there are multiple combinations of those dimensions that can yield the same timbre.
 
 For this parametric study, two values of C are used, and several values of A.

@@ -1,58 +1,180 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang='en'>
 <head>
-    <meta charset="UTF-8">
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta name='description' content='We make wax baffles to specified measurements and record sound samples'>
+    <meta name='keywords' content='saxophone, jazz, mouthpiece, baffle'>
+    <meta name='author' content='Jack'>
     <title>Parametric Study of Rollover Baffle Geometry</title>
-    <style>
-        .container {
-            display: flex;
-        }
-        .column {
-            flex: 1;
-            margin: 10px;
-        }
-        .column h2 {
-            text-align: center;
-        }
-        img{
-            width: 600px;
-        }
-    </style>
+    <!-- <link rel="stylesheet" href="static/style.css"> -->
+
+<style>
+html{
+    font-size: 20px;
+    font-family: roman;
+    font-family: arial,sans-serif;
+}
+html,div,ul,ol,h1,h2,h3{
+    margin: 0;
+    padding: 0;
+    font-size: 1.1rem;
+}
+h1,h2,h3,th{
+}
+body{
+    position: relative;
+    padding: 0.5rem;
+}
+main{
+    max-width: 35rem;
+}
+h1{
+    font-size: 3rem;
+}
+h2{
+    font-size: 2rem;
+    margin-top: 2rem;
+}
+table,tr,td,th{
+    vertical-align: top;
+    text-align: left;
+    border-collapse: collapse;
+}
+th{
+    font-size: 1.5rem;
+    padding-left: 1rem;
+    padding-top: 1rem;
+}
+th + th{
+    padding-left: 0;
+}
+td{
+    padding: 1rem;
+}
+p{
+    max-width: 40rem;
+}
+ul,ol{
+    list-style-position: inside;
+}
+li{
+  margin-bottom: 1.5rem;
+}
+body .highlighted{
+    background: yellow;
+}
+.odd{
+    background: #ddd;
+}
+.page{
+    padding: 0.5rem;
+    font-size: 1.3rem;
+}
+audio{
+  width: 100%;
+}
+.container {
+    display: flex;
+}
+.column {
+    flex: 1;
+    margin: 10px;
+}
+.column h2 {
+    text-align: center;
+}
+.column + .column{
+    border-left: 2px solid black;
+}
+img{
+    width: 600px;
+}
+
+.recording{
+    margin-bottom: 1.5rem;
+}
+
+</style>
 </head>
+
+
+
+
 <body>
     <h1>Parametric Study of Rollover Baffle Geometry</h1>
+
+    <p>
+
+    I'm learning to design, build, and repair mouthpieces. Especially of interest to me is how to construct a baffle to give a particular timbre.
+    </p>
+
+    <p>
+Today I constructed several rollover baffles atop an otherwise-dark-sounding baritone mouthpiece. With each new wax rollover baffle, the dimensions of the baffle were written down and a recording of the D minor scale was made.
+
+    </p>
+
+    <p>
+
+Here is a sketch showing the dimensions referenced. Dimension A is the baffle length. Dimension C is the depth below the table where the baffle angle (the red-orange line) crosses.
+    </p>
+
     <img src='images/sketch.jpg'></img>
-    <h2>Audio Files</h2>
+
+    <p>
+Here is a photo of one of the wax baffles. (C=0mm, A=2.3mm)
+    <img src='images/baffle-c0-a2.3.jpg'></img>
+
+
+
+
+    </p><p>
+For simplicity these rollover baffles actually have sharp edges. The baffle angle was established by
+scraping the wax with a flat object with one end of the flat object resting atop the tip rail and the other end of the flat object resting either at the base of the window (C==0) or 5mm below the base of the window (C==5). This gives a clean, repeatable angle.
+
+    </p><p>
+Establishing the baffle length (A) was more akin to "shave and check". The same flat object was used to establish the back side of the baffle, and after a few scrapes the baffle length (A) was measured. Once the length was deemed appropriate for the next reading, a recording was made.
+
+    </p>
+
+    <h2 id='audio'>Audio Files</h2>
+    <p>
+    See if you can find a sound from the left column that has has a similar timbre to one from the right column. That's the real point of this exercise ;)
+
+    </p>
+    <p>
+    Note the first one in the left column (C=0, A=0) represents the mouthpiece with no wax baffle at all.
+    </p>
     <div class="container">
         <div class="column">
-            <h2>C0</h2>
-            <ul>
+            <h2>C=0mm</h2>
                 {% for file in file_info.C0 %}
-                <li>
-                    <p>A: {{ file.A }}</p>
+                <div class='recording'>
+                    C: {{ file.C }}mm, A: {{ file.A }}mm
                     <audio controls>
                         <source src="{{ file.file }}" type="audio/mpeg">
                         Your browser does not support the audio element.
                     </audio>
-                </li>
+                </div>
                 {% endfor %}
-            </ul>
         </div>
         <div class="column">
-            <h2>C5</h2>
-            <ul>
+            <h2>C=5mm</h2>
                 {% for file in file_info.C5 %}
-                <li>
-                    <p>A: {{ file.A }}</p>
+                <div class='recording'>
+                    C: {{ file.C }}mm, A: {{ file.A }}mm
                     <audio controls>
                         <source src="{{ file.file }}" type="audio/mpeg">
                         Your browser does not support the audio element.
                     </audio>
-                </li>
+                </div>
                 {% endfor %}
-            </ul>
         </div>
     </div>
+    <p>
+    The real intent of the exercise is to identify disparate geometries that share the same timbre.
+    </p>
 </body>
 </html>
 
