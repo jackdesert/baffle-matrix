@@ -3,10 +3,21 @@ import os
 
 # Define the directory contents
 files = [
-    'C0/a0.0__c0.mp3', 'C0/a0.5__c0.mp3', 'C0/a0.7__c0.mp3', 'C0/a1.0__c0.mp3',
-    'C0/a1.8__c0.mp3', 'C0/a2.3__c0.mp3', 'C0/a3__c0.mp3', 'C0/a4__c0.mp3',
-    'C0/a5__c0.mp3', 'C5/a1.5__c5.mp3', 'C5/a2.3__c5.mp3', 'C5/a2.9__c5.mp3',
-    'C5/a3__c5.mp3', 'C5/a4__c5.mp3', 'C5/a7.5__c5.mp3'
+    'C0/a0.0__c0.mp3',
+    'C0/a0.5__c0.mp3',
+    'C0/a0.7__c0.mp3',
+    'C0/a1.0__c0.mp3',
+    'C0/a1.8__c0.mp3',
+    'C0/a2.3__c0.mp3',
+    'C0/a3__c0.mp3',
+    'C0/a4__c0.mp3',
+    'C0/a5__c0.mp3',
+    'C5/a1.5__c5.mp3',
+    'C5/a2.3__c5.mp3',
+    'C5/a2.9__c5.mp3',
+    'C5/a3__c5.mp3',
+    'C5/a4__c5.mp3',
+    'C5/a7.5__c5.mp3',
 ]
 
 # Extract values of A and C from filenames
@@ -29,4 +40,3 @@ with open('index.html', 'w') as f:
     f.write(output)
 
 print("HTML file generated successfully.")
-
